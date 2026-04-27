@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500.000mm" height="350.000mm" viewBox="0 0 500.000 350.000">
+  <rect x="0" y="0" width="500.000" height="350.000" fill="white"/>
+  <image href="charuco_full_bed_500x350.png" x="0" y="0" width="500.000" height="350.000" preserveAspectRatio="none"/>
+</svg>
