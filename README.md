@@ -76,6 +76,12 @@ makes the active board area 140 x 140 mm.
 
 For a single A4 copy-stand test, use the balanced A4 board:
 
+```text
+printables/charuco_a4_balanced_266x190.svg
+```
+
+To regenerate it:
+
 ```bash
 python scripts/make_charuco_board.py \
   --preset a4-balanced \
@@ -86,6 +92,12 @@ That produces a 7 x 5 board with 38 mm squares and 27 mm markers. The active
 board area is 266 x 190 mm.
 
 For a more robust but sparser A4 board:
+
+```text
+printables/charuco_a4_robust_270x180.svg
+```
+
+To regenerate it:
 
 ```bash
 python scripts/make_charuco_board.py \
@@ -98,6 +110,12 @@ board area is 270 x 180 mm.
 
 For a full copy-stand bed homography board:
 
+```text
+printables/charuco_full_bed_500x350.svg
+```
+
+To regenerate it:
+
 ```bash
 python scripts/make_charuco_board.py \
   --preset full-bed-500x350 \
@@ -108,8 +126,9 @@ That produces a 10 x 7 board with 50 mm squares and 35 mm markers. The active
 board area is 500 x 350 mm.
 
 The generator writes both a PNG and a same-name SVG wrapper. Prefer printing the
-SVG at 100% scale with no "fit to page". Measure the actual square size after
-printing and use the measured value for calibration.
+SVG at 100% scale with no "fit to page". The SVG references the same-name PNG,
+so keep both files together. Measure the actual square size after printing and
+use the measured value for calibration.
 
 ## Preparing A Tiled Full-Bed Board
 
